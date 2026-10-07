@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shashini Shanmugan | AI & ML Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f8f6;--surface:#fff;--ink:#12302c;--muted:#51675f;--line:#cfdcd6;--accent:#3b3fd4;--hi:#ffd166;--on-accent:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1b19;--surface:#152724;--surface:#152724;--ink:#e6f1ed;--muted:#9bb3aa;--line:#2a403b;--accent:#9ea1ff;--on-accent:#0e1b19}}
+:root[data-theme="dark"]{--bg:#0e1b19;--surface:#152724;--ink:#e6f1ed;--muted:#9bb3aa;--line:#2a403b;--accent:#9ea1ff;--on-accent:#0e1b19}
+html{scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px 22px;align-items:center;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+nav b{font-family:"Bricolage Grotesque";font-size:18px;margin-right:auto}
+nav a{color:var(--ink);text-decoration:none;font-size:15px}
+nav a:hover{text-decoration:underline}
+.hero{padding:72px 0 48px}
+.hero h1{font-size:clamp(44px,9vw,92px);font-weight:800;letter-spacing:-.03em;max-width:12ch}
+.hero h1 mark{background:linear-gradient(transparent 62%,var(--hi) 62%);color:inherit}
+.hero p.lead{max-width:62ch;font-size:19px;color:var(--muted);margin:22px 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:500;text-decoration:none;border:2px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--on-accent)}
+.btn.s{color:var(--accent)}
+.btn:hover{transform:translateY(-1px)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;margin-top:48px;border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden}
+.stats div{padding:18px 20px;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats strong{display:block;font:800 30px "Bricolage Grotesque";color:var(--accent)}
+.stats span{color:var(--muted);font-size:14px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(28px,4vw,40px);margin-bottom:28px}
+.proj{display:grid;gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px}
+.card h3{font-size:24px}
+.meta{color:var(--muted);font-size:14px;margin:6px 0 14px}
+.card ul{padding-left:20px;margin:0 0 16px}
+.card li{margin-bottom:8px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}
+.tags li{margin:0;padding:3px 11px;border:1px solid var(--line);border-radius:99px;font-size:13.5px}
+.metric{display:inline-block;background:var(--hi);color:#2b2200;font-weight:500;padding:2px 10px;border-radius:6px;font-size:14px;margin-bottom:12px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.skills h3{font-size:18px;margin-bottom:10px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.cert{display:flex;flex-direction:column;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;text-decoration:none;color:var(--ink)}
+.cert:hover{border-color:var(--accent)}
+.cert b{font-family:"Bricolage Grotesque";font-size:18px;line-height:1.25}
+.cert small{color:var(--muted);font-size:14px}
+.cert em{font-style:normal;color:var(--accent);font-size:14px;font-weight:500;margin-top:6px}
+.badge{align-self:flex-start;font-size:12px;background:var(--hi);color:#2b2200;padding:1px 8px;border-radius:5px;font-weight:500}
+footer{padding:48px 0 64px;border-top:1px solid var(--line)}
+footer h2{font-size:34px;margin-bottom:12px}
+@media (max-width:560px){.stats div{border-right:0;border-bottom:1px solid var(--line)}.hero{padding-top:44px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Shashini S.</b><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#certs">Certifications</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<h1>Shashini <mark>Shanmugan</mark></h1>
+<p class="lead">BCA student in Artificial Intelligence &amp; Machine Learning at Alliance University, Bangalore. I build end-to-end ML pipelines and GenAI apps, and I'm looking for a GenAI / AI-ML internship.</p>
+<div class="btns">
+<a class="btn p" href="https://github.com/shashini-s" target="_blank" rel="noopener">View GitHub</a>
+<a class="btn s" href="https://www.linkedin.com/in/shashini-s-7b3152229" target="_blank" rel="noopener">LinkedIn profile</a>
+<a class="btn s" href="mailto:shas1004@gmail.com">Email me</a>
+</div>
+<div class="stats">
+<div><strong>87%</strong><span>Sentiment model accuracy</span></div>
+<div><strong>2.3</strong><span>RMSE, grade prediction</span></div>
+<div><strong>8</strong><span>Verified certifications</span></div>
+<div><strong>C1</strong><span>English, EF SET 69/100</span></div>
+</div></div></header>
+
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<p style="max-width:68ch">I hold certifications in Python, machine learning foundations, generative AI, data visualization and inferential statistics from EY-Microsoft, Meta, IBM, UiPath, Duke University, the University of Illinois and the University of Michigan. I work with prompt engineering, relational databases and Streamlit, and I'm comfortable communicating with global teams.</p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<div class="proj">
+
+<article class="card">
+<h3>AI-Powered Sentiment Analysis System</h3>
+<p class="meta">2024</p>
+<span class="metric">87% accuracy, 3-class classification</span>
+<ul>
+<li>Built a multi-class text classifier that detects positive, negative and neutral sentiment in customer reviews.</li>
+<li>Used TF-IDF vectorization and compared Logistic Regression, Naive Bayes and SVM, choosing the best model with cross-validation.</li>
+<li>Produced evaluation reports with a confusion matrix and ROC-AUC curves (Matplotlib, Seaborn) for stakeholders.</li>
+</ul>
+<ul class="tags"><li>Python</li><li>Scikit-learn</li><li>Pandas</li><li>NLTK</li><li>Matplotlib</li></ul>
+<a class="btn p" href="https://github.com/shashini-s" target="_blank" rel="noopener">View on GitHub</a>
+</article>
+
+<article class="card">
+<h3>Domain-Specific AI Chatbot with Prompt Engineering</h3>
+<p class="meta">2024</p>
+<span class="metric">Few-shot + chain-of-thought prompting</span>
+<ul>
+<li>Designed a Q&amp;A chatbot using few-shot prompting and prompt chaining through the GPT API, applying chain-of-thought to cut irrelevant answers.</li>
+<li>Built a Streamlit front end with live conversation history, context retention and session management.</li>
+<li>Tuned system prompts and temperature step by step to improve coherence and domain focus.</li>
+</ul>
+<ul class="tags"><li>Python</li><li>OpenAI API</li><li>Streamlit</li></ul>
+<a class="btn p" href="https://github.com/shashini-s" target="_blank" rel="noopener">View on GitHub</a>
+</article>
+
+<article class="card">
+<h3>Student Performance Prediction System</h3>
+<p class="meta">2023</p>
+<span class="metric">RMSE 2.3 on the test set</span>
+<ul>
+<li>Built a regression model that predicts final grades from attendance, assignment scores and prior GPA.</li>
+<li>Designed a MySQL backend with an automated Python ingestion pipeline.</li>
+<li>Packaged it as a CLI tool for faculty use, covering the full path from data to delivery.</li>
+</ul>
+<ul class="tags"><li>Python</li><li>Scikit-learn</li><li>MySQL</li></ul>
+<a class="btn p" href="https://github.com/shashini-s" target="_blank" rel="noopener">View on GitHub</a>
+</article>
+
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Technical skills</h2>
+<div class="skills">
+<div class="card"><h3>Languages</h3><ul class="tags"><li>Python</li><li>Java</li><li>JavaScript</li><li>SQL</li></ul></div>
+<div class="card"><h3>AI / ML</h3><ul class="tags"><li>Scikit-learn</li><li>NumPy</li><li>Pandas</li><li>Matplotlib</li><li>Seaborn</li><li>NLTK</li></ul></div>
+<div class="card"><h3>Generative AI</h3><ul class="tags"><li>Prompt Engineering</li><li>Few-Shot Prompting</li><li>LLM APIs</li><li>Hugging Face (basics)</li></ul></div>
+<div class="card"><h3>Statistics</h3><ul class="tags"><li>Inferential Statistics</li><li>Hypothesis Testing</li><li>Regression Analysis</li></ul></div>
+<div class="card"><h3>Data visualization</h3><ul class="tags"><li>Matplotlib</li><li>Seaborn</li><li>Google Colab</li><li>Jupyter Notebook</li></ul></div>
+<div class="card"><h3>Web &amp; databases</h3><ul class="tags"><li>HTML5</li><li>CSS3</li><li>MySQL</li><li>SQLite</li></ul></div>
+<div class="card"><h3>Dev tools &amp; RPA</h3><ul class="tags"><li>Git</li><li>VS Code</li><li>Streamlit</li><li>UiPath</li></ul></div>
+</div></div></section>
+
+<section id="education"><div class="wrap">
+<h2>Education</h2>
+<div class="card">
+<h3>BCA, Artificial Intelligence &amp; Machine Learning</h3>
+<p class="meta">Alliance University, Bangalore · 2023 – 2026 (pursuing) · CGPA 7.5</p>
+<p style="margin:0 0 12px">Relevant coursework</p>
+<ul class="tags" style="margin:0"><li>Machine Learning</li><li>Data Structures &amp; Algorithms</li><li>DBMS</li><li>Python Programming</li><li>AI Fundamentals</li><li>Inferential Statistics</li><li>Web Technologies</li></ul>
+</div></div></section>
+
+<section id="certs"><div class="wrap">
+<h2>Certifications</h2>
+<div class="certs">
+<a class="cert" href="https://www.linkedin.com/posts/shashini-s-7b3152229_aiskillspassport-ey-microsoft-share-7431586548921577472-e3hy?utm_source=share&utm_medium=member_ios&rcm=ACoAADknAvcBXmmHuHKXGolep0XFvJw12bTxyM0" target="_blank" rel="noopener"><b>AI Skills Passport</b><small>EY &amp; Microsoft</small><em>View credential</em></a>
+<a class="cert" href="https://www.linkedin.com/posts/shashini-s-7b3152229_dukeuniversity-inferentialstatistics-activity-7374808326448201728-muQ7?utm_source=share&utm_medium=member_ios&rcm=ACoAADknAvcBXmmHuHKXGolep0XFvJw12bTxyM0" target="_blank" rel="noopener"><span class="badge">Coursera</span><b>Inferential Statistics</b><small>Duke University</small><em>View credential</em></a>
+<a class="cert" href="https://www.linkedin.com/posts/shashini-s-7b3152229_datavisualization-universityofillinois-coursera-activity-7376141592245489665-s3la?utm_source=share&utm_medium=member_ios&rcm=ACoAADknAvcBXmmHuHKXGolep0XFvJw12bTxyM0" target="_blank" rel="noopener"><span class="badge">Coursera</span><b>Data Visualization</b><small>University of Illinois</small><em>View credential</em></a>
+<a class="cert" href="https://www.linkedin.com/posts/shashini-s-7b3152229_coursera-meta-introductiontodatabases-share-7376471780204539904-_aX9?utm_source=share&utm_medium=member_ios&rcm=ACoAADknAvcBXmmHuHKXGolep0XFvJw12bTxyM0" target="_blank" rel="noopener"><span class="badge">Coursera</span><b>Introduction to Databases</b><small>Meta</small><em>View credential</em></a>
+<a class="cert" href="https://www.linkedin.com/posts/shashini-s-7b3152229_programming-python-coursera-share-7284183725477707777-iCp1?utm_source=share&utm_medium=member_ios&rcm=ACoAADknAvcBXmmHuHKXGolep0XFvJw12bTxyM0" target="_blank" rel="noopener"><span class="badge">Coursera</span><b>Programming for Everybody: Getting Started with Python</b><small>University of Michigan</small><em>View credential</em></a>
+<a class="cert" href="https://www.linkedin.com/posts/shashini-s-7b3152229_uipath-rpa-automation-share-7370665785079328768-M-IY?utm_source=share&utm_medium=member_ios&rcm=ACoAADknAvcBXmmHuHKXGolep0XFvJw12bTxyM0" target="_blank" rel="noopener"><b>UiPath Academy: Automation Developer Associate</b><small>UiPath</small><em>View credential</em></a>
+<a class="cert" href="https://www.linkedin.com/posts/shashini-s-7b3152229_lifelonglearning-techskills-ibm-share-7284494613019574274-F96a?utm_source=share&utm_medium=member_ios&rcm=ACoAADknAvcBXmmHuHKXGolep0XFvJw12bTxyM0" target="_blank" rel="noopener"><b>Introduction to Hardware and Operating Systems</b><small>IBM</small><em>View credential</em></a>
+<a class="cert" href="https://www.linkedin.com/posts/shashini-s-7b3152229_ef-set-certificate-in-reading-listening-share-7291036961547399168-L8_Z?utm_source=share&utm_medium=member_ios&rcm=ACoAADknAvcBXmmHuHKXGolep0XFvJw12bTxyM0" target="_blank" rel="noopener"><b>EF SET English Certificate: C1 Advanced (69/100)</b><small>EF Education First</small><em>View credential</em></a>
+</div></div></section>
+
+<footer id="contact"><div class="wrap">
+<h2>Let's work together</h2>
+<p style="max-width:56ch;color:var(--muted)">I'm open to GenAI and AI/ML internships. The fastest way to reach me is email.</p>
+<div class="btns">
+<a class="btn p" href="mailto:shas1004@gmail.com">shas1004@gmail.com</a>
+<a class="btn s" href="tel:+917353577555">+91 73535 77555</a>
+<a class="btn s" href="https://www.linkedin.com/in/shashini-s-7b3152229" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn s" href="https://github.com/shashini-s" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div></footer>
+</body>
+</html>
